@@ -103,6 +103,7 @@ view: query_logs {
   measure: count_of_question_submitted {
     type: count_distinct
     sql: ${question_id} ;;
+    drill_fields: [log_type,count_of_question_submitted]
   }
 
   measure: count_of_question_answered {
